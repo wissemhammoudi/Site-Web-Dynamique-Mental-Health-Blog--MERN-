@@ -1,0 +1,71 @@
+.containerfilter{
+    display: grid;
+    grid-template-columns: 80% 20%;
+ }
+ .deuxinpitcontainer{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    padding: 10px;
+  }
+ .buttonfiltrecontainer{
+    display: flex;
+    align-content:center ;
+    justify-content: center;
+ }
+.inputcontinaer{
+    display: flex;
+    flex-direction:row ;
+    gap: 30px;
+}
+.btnfiltre{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 50%;
+
+}
+.btnfiltre button{
+    background-color:#D294BB ;
+    display: flex;
+    align-content: center;
+    width: 80%;
+
+}
+@media (max-width: 900px) {
+ 
+    .containerfilter{
+        display: grid;
+        grid-template-columns: 70% 30%;
+     }
+     
+}
+@media (max-width: 800px) {
+ 
+    .containerfilter{
+        display: flex;
+        flex-direction: column;
+     }
+     
+}
+@media (max-width: 600px) {
+ 
+    .containerfilter{
+        display: flex;
+        flex-direction: column;
+     }
+  .deuxinpitcontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .inputcontinaer{
+    display: flex;
+    flex-direction:column ;
+}
+.btnfiltre button{
+
+    width: 90%;
+
+}
+}

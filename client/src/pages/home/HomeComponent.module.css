@@ -1,0 +1,417 @@
+.hero {
+    position: relative;
+
+    color: #fff;
+}
+
+.background_image {
+    position: relative;
+}
+
+.hero_content_area {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+}
+.titlecateghome h3{
+color: #873260;
+}
+.hero h1 {
+    font-size: 35px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+.hero_content_area h3 {
+    display: block;
+    font-size: 1.5rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.hero h3 {
+    margin-bottom: 60px;
+}
+
+.hero a.btn {
+    padding: 20px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: #873260;
+    opacity: 1;
+    transition: all 400ms;
+}
+
+
+
+
+div h3.title {
+    color: #873260;
+    text-transform: capitalize;
+    font: bold 30px "Amatic SC", sans-serif;
+    text-align: center;
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #E0D0E8;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.subscribe__title {
+    font-weight: bold;
+    font-size: 26px;
+    color: #fff;
+}
+
+.subscribe__copy {
+    max-width: 450px;
+    text-align: center;
+    margin-bottom: 53px;
+    line-height: 1.5;
+}
+
+.form {
+
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form__email input {
+    padding: 20px 25px;
+    border-radius: 5px;
+    border: 1px solid #CAD3DB;
+    width: 100%;
+    font-size: 18px;
+    color: #0F121F;
+}
+
+.form__email input:focus {
+    outline: 1px solid #D294BB;
+}
+.containercategoriesHome{
+display: flex;
+justify-content: space-evenly;
+width: 100%;
+}
+.form__button {
+    background: #873260;
+    padding: 10px;
+    border: none;
+    width: 244px;
+    height: 42px;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0 4px 20px #D294BB;
+}
+
+.form__button:hover {
+    box-shadow: 0 10px 20px #D294BB;
+}
+
+.notice {
+    width: 345px;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .subscribe__title {
+        font-size: 20px;
+        /* Adjusted font size for small screens */
+    }
+
+    .containerdestination img {
+        width: 90%;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .subscribe__title {
+        font-size: 18px;
+        /* Adjusted font size for extra-small screens */
+    }
+
+    .form__email,
+    .form__button {
+
+        font-size: 12px;
+        /* Adjusted font size for extra-small screens */
+    }
+}
+
+.containerdestination {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 80vh;
+    justify-content: center;
+        padding: 20px 0px;
+
+    
+
+}
+.conimgpurp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerdestination img {
+    width: 80%;
+    border-radius: 10px;
+    
+}
+
+.destinations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.destinations p {
+    line-height: 2;
+    text-align: left;
+    
+}
+
+
+.congetget {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.containhelptoday {
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+@media (max-width: 800px) {
+    .containerdestination {
+        display: flex;
+        height: auto;
+        flex-direction:column;
+        justify-content: center;
+        
+    
+    }
+    .containerdestination img {
+        width: 70%;
+        border-radius: 10px;
+        
+    }
+
+    div h3.title {
+        
+        font: bold 20px "Amatic SC", sans-serif;
+    }
+    .newtit {
+        color: #873260;
+        font-size: 1rem;
+        text-align: left;
+      
+    }
+    .newpurpp {
+        font-size: 0.6rem;
+        text-align: left;
+    }
+    
+
+}
+div h3.title {
+    color: #873260;
+    text-transform: capitalize;
+    font: bold 25px "Amatic SC", sans-serif;
+    text-align: center;
+}
+.newtit {
+    color: #873260;
+    font-size: 1.2rem;
+    text-align: left;
+  
+}
+.newpurpp {
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+
+.containcomptourpromax{
+    flex-direction: column;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    padding: 20px 10px;
+}
+.containlescomptour{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.containlescomptour span{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    flex-direction: column;
+}
+.title h1 {
+    font-size: 1.5rem;
+}
+.title p {
+    font-size: 1rem;
+}
+@media (max-width: 800px) {
+
+    .containlescomptour{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }    
+ 
+    .title h1 {
+        font-size: 1.1rem;
+    }
+    .title p {
+        font-size: 0.7rem;
+    }
+}
+
+.comptourwahda{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap:wrap;
+}
+.comptourwahda img{
+    width: 30%;
+    text-align: center;
+}
+.comptourwahda span {
+    font-size: 1rem;
+}
+
+
+
+
+.packages  {
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: center;
+    gap:100px;
+}
+
+
+
+.packages .grid {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px ;
+}
+
+.packages .grid li {
+    flex-basis: calc(25% - 40px);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+
+.packages .grid li h4 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+@media (max-width: 800px) {
+    .packages .grid {
+        justify-content: center;
+        display: block;
+        gap: 20px;
+
+    }
+
+
+    .packages .grid li {
+        flex-basis: calc(50% - 40px);
+    }
+    .newpurpp {
+        display: none;
+    }
+    .respp {
+        display: flex;
+    }
+
+}
+.onefilter {
+    width: auto;
+    padding: 3px 7px;
+    border: 1px solid white;
+    border-radius: 20px;
+    height: 25px;
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right:10px ;
+    cursor: pointer;
+    color: #D294BB;
+}
+.onefilter {
+    cursor: pointer;
+    width: auto;
+}
+.onefilter span{
+    font-weight: 600;
+   
+}
+
+.containersoundmediaplayer{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+    .containersoundmediaplayer{
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap:30px
+    }
+
+
+
+}

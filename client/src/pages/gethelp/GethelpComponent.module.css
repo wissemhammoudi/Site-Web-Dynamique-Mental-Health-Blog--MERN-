@@ -1,0 +1,317 @@
+div h3.title {
+    color: #873260;
+    text-transform: capitalize;
+    font: bold 30px "Amatic SC", sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #E0D0E8;
+    border-radius: 10px;
+    max-width: 500px;
+    /* Adjust the max-width as needed */
+    margin: 0 auto;
+    /* Center the box */
+}
+
+@media (max-width: 600px) {
+    .subscribe {
+        padding: 10px;
+    }
+}
+
+.subscribe__title {
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 18px;
+    text-align: center;
+    line-height: 1.2em;
+    height: 3.6em;
+    overflow: hidden;
+    padding: 10px 50px;
+}
+
+@media (max-width: 600px) {
+    .subscribe__title {
+        height: auto;
+    }
+    
+.subscribe {
+ 
+    max-width: 400px;
+   
+}
+}
+
+.subscribe__copy {
+    max-width: 450px;
+    text-align: center;
+    margin-bottom: 53px;
+    line-height: 1.5;
+}
+
+
+.container {
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+    .container {
+        height: 350px;
+    }
+    .subscribe {
+  
+        max-width: 400px;
+       
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 300px;
+
+    }
+    .subscribe {
+  
+        max-width: 300px;
+       
+    }
+}
+
+.para {
+    width: 250px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #873260;
+}
+
+.parag {
+    width: 250px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #873260;
+}
+
+.boxContainer {
+    position: relative;
+    margin-top: 50px;
+
+
+}
+
+.box {
+    margin-top: 20px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.box select {
+
+    background-color: #873260;
+    border-radius: 10px;
+    color: white;
+    padding: 12px;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+ 
+    outline: none;
+}
+
+._box_i40r8_179 select {
+    background-image: none;
+    background-color: #873260;
+    border-radius: 10px;
+    color: white;
+    padding: 12px;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+
+
+
+.box select option {
+    padding: 30px;
+}
+
+
+
+.sectiongethelp {
+    text-align: center;
+    max-width: 500px;
+
+    margin: 15px auto;
+    padding: 10px;
+    background-color: white;
+}
+
+.linksgethelp {
+    font-size: 18px;
+    text-align: justify;
+    margin: 0 30px;
+    background-color: white;
+    color: black;
+}
+
+
+
+
+.call_to_us {
+    position: fixed;
+    display: block;
+    bottom: 20px;
+    right: 20px;
+    margin: 0 5px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-decoration: none;
+    animation: rotating 1.5s infinite;
+    background-color: #4BC2CE;
+    z-index: 2;
+}
+
+@media (max-width: 600px) {
+    .call_to_us {
+
+        width: 50px;
+        height: 50px;
+        bottom: 0;
+
+    }
+}
+
+.call_to_us:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    display: block;
+    border: 2px solid #5A4FCF;
+    border-radius: 50%;
+    animation: squeeze 2s infinite;
+}
+
+.call_to_us:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5A4FCF url(https://cdn0.iconfinder.com/data/icons/windows8_icons/26/phone1.png) center no-repeat;
+    border-radius: 50%;
+}
+
+.call_to_us__label {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #D294BB;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    font-size: 12px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s ease
+}
+
+.call_to_us:hover {
+    animation: none;
+}
+
+.call_to_us:hover .call_to_us__label {
+    opacity: 1;
+    z-index: 2;
+}
+
+.call_to_us:hover:before {
+    border-color: #D294BB;
+}
+
+@keyframes squeeze {
+    0% {
+        width: 10px;
+        height: 10px;
+        margin-top: -5px;
+        margin-left: -5px;
+    }
+
+    50% {
+        width: 90px;
+        height: 90px;
+        margin-top: -47px;
+        margin-left: -47px;
+    }
+
+    100% {
+        width: 10px;
+        height: 10px;
+        margin-top: -5px;
+        margin-left: -5px;
+    }
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(-45deg);
+    }
+
+    40% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-45deg);
+    }
+
+    65% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
