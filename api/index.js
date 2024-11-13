@@ -12,16 +12,14 @@ import cabinetRoutes from './routes/cabinet.route.js'
 import cookieParser from 'cookie-parser';
 import path from 'path';
 import emailRoutes from './routes/email.routes.js';
-
 dotenv.config();
-
 mongoose
-  .connect(process.env.MONGO)
+  .connect("mongodb+srv://hammoudiwissem81:wi1212ssem@cluster0.rupng.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log('MongoDb is connected');
   })
   .catch((err) => {
-    console.log(err);
+    console.error('MongoDb connection error:', err);
   });
 
 const __dirname = path.resolve();
