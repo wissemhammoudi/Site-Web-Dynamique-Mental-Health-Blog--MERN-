@@ -12,9 +12,11 @@ import cabinetRoutes from './routes/cabinet.route.js'
 import cookieParser from 'cookie-parser';
 import path from 'path';
 import emailRoutes from './routes/email.routes.js';
-dotenv.config();
+require('dotenv').config();
+const mongoose = require('mongoose');
+const uri = process.env.MONGO;
 mongoose
-  .connect("mongodb+srv://hammoudiwissem81:wi1212ssem@cluster0.rupng.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+  .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('MongoDb is connected');
   })
