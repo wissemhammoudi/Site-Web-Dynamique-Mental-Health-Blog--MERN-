@@ -1,0 +1,31 @@
+version: '3.8'
+
+# Services
+services:
+  # Server service
+  server:
+    build:
+      context: ./api # Specify the server build context (current directory)
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "3000:3000"
+    env_file: 
+      - ./.env # Ensure the correct path to your .env file
+    volumes:
+      - mydata:/app/data # Example volume to persist server-side data
+
+  # Client service
+  client:
+    build:
+      context: ./client # Specify the client build context
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - server # Ensure the server is started before the client
+
+# Volumes definition
+volumes: 
+  mydata: # Named volume to persist data
